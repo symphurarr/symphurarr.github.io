@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>爱的一百条法则-情感关系成长指南与相处智慧解读</title>
+<meta name="description" content="爱的一百条法则是一份围绕亲密关系、情感沟通与自我成长整理的相处指南，涵盖理解、尊重、沟通、边界与长期陪伴等主题，帮助你建立更稳定健康的情感关系。">
+<meta name="keywords" content="爱的一百条法则,情感关系,亲密关系,恋爱相处,沟通技巧,情感成长">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+:root{
+  --rose:#c14b63;
+  --rose-deep:#8f2f45;
+  --rose-soft:#f7e6ea;
+  --ink:#2c2226;
+  --ink-soft:#5f5358;
+  --paper:#fffafb;
+  --line:#ecd9de;
+  --gold:#c9a227;
+  --radius:14px;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.75;
+  font-size:16px;
+}
+a{color:inherit;text-decoration:none;}
+img{max-width:100%;display:block;}
+.wrap{
+  width:100%;
+  max-width:1160px;
+  margin:0 auto;
+  padding:0 20px;
+}
+/* ---------- header ---------- */
+.site-header{
+  position:sticky;
+  top:0;
+  z-index:50;
+  background:rgba(255,250,251,.94);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+  height:66px;
+}
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight:700;
+  font-size:19px;
+  letter-spacing:.5px;
+  color:var(--rose-deep);
+  white-space:nowrap;
+}
+.logo-mark{
+  width:30px;height:30px;
+  border-radius:50%;
+  background:linear-gradient(135deg,var(--rose),var(--gold));
+  display:flex;align-items:center;justify-content:center;
+  color:#fff;font-size:15px;
+  flex-shrink:0;
+}
+.main-nav{
+  display:flex;
+  gap:26px;
+  font-size:15px;
+  color:var(--ink-soft);
+}
+.main-nav a{
+  padding:4px 0;
+  border-bottom:2px solid transparent;
+  transition:.2s;
+}
+.main-nav a:hover{
+  color:var(--rose);
+  border-bottom-color:var(--rose);
+}
+.header-cta{
+  font-size:14px;
+  padding:8px 18px;
+  border-radius:999px;
+  background:var(--rose);
+  color:#fff;
+  white-space:nowrap;
+  transition:.2s;
+}
+.header-cta:hover{background:var(--rose-deep);}
+.nav-toggle{
+  display:none;
+  background:none;border:none;
+  font-size:24px;color:var(--rose-deep);
+  cursor:pointer;
+}
+/* ---------- hero ---------- */
+.hero{
+  background:
+    radial-gradient(circle at 12% 20%,rgba(193,75,99,.10),transparent 55%),
+    radial-gradient(circle at 88% 80%,rgba(201,162,39,.12),transparent 55%),
+    linear-gradient(180deg,#fff5f7,#fffafb);
+  border-bottom:1px solid var(--line);
+  padding:64px 0 56px;
+}
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  gap:48px;
+  align-items:center;
+}
+.hero h1{
+  font-size:38px;
+  line-height:1.35;
+  letter-spacing:.5px;
+  color:var(--rose-deep);
+  margin-bottom:18px;
+}
+.hero h1 span{
+  display:block;
+  font-size:17px;
+  font-weight:400;
+  color:var(--ink-soft);
+  margin-top:12px;
+  letter-spacing:0;
+}
+.hero p.lead{
+  font-size:16.5px;
+  color:var(--ink-soft);
+  margin-bottom:26px;
+  max-width:560px;
+}
+.hero-actions{
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+}
+.btn{
+  display:inline-block;
+  padding:12px 26px;
+  border-radius:999px;
+  font-size:15px;
+  transition:.22s;
+  cursor:pointer;
+  border:1px solid transparent;
+}
+.btn-primary{
+  background:var(--rose);
+  color:#fff;
+}
+.btn-primary:hover{background:var(--rose-deep);}
+.btn-ghost{
+  border-color:var(--rose);
+  color:var(--rose);
+  background:transparent;
+}
+.btn-ghost:hover{background:var(--rose-soft);}
+.hero-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:26px 24px;
+  box-shadow:0 18px 40px -28px rgba(143,47,69,.45);
+}
+.hero-card h2{
+  font-size:16px;
+  color:var(--rose-deep);
+  margin-bottom:16px;
+  display:flex;align-items:center;gap:8px;
+}
+.hero-card h2::before{
+  content:"";
+  width:6px;height:18px;border-radius:3px;
+  background:var(--rose);
+  display:inline-block;
+}
+.mini-list{list-style:none;}
+.mini-list li{
+  display:flex;
+  gap:12px;
+  padding:11px 0;
+  border-bottom:1px dashed var(--line);
+  font-size:14.5px;
+  color:var(--ink-soft);
+}
+.mini-list li:last-child{border-bottom:none;}
+.mini-list b{
+  color:var(--rose);
+  font-weight:600;
+  flex-shrink:0;
+  width:64px;
+}
+/* ---------- section base ---------- */
+section{padding:60px 0;}
+.section-head{
+  margin-bottom:34px;
+  max-width:760px;
+}
+.section-head h2{
+  font-size:26px;
+  color:var(--rose-deep);
+  margin-bottom:10px;
+  letter-spacing:.5px;
+}
+.section-head p{
+  color:var(--ink-soft);
+  font-size:15.5px;
+}
+.eyebrow{
+  display:inline-block;
+  font-size:13px;
+  letter-spacing:2px;
+  color:var(--gold);
+  margin-bottom:10px;
+  font-weight:600;
+}
+/* ---------- 法则分类 ---------- */
+.cat-section{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.cat-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+.cat-card{
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:24px 22px;
+  background:var(--paper);
+  transition:.22s;
+}
+.cat-card:hover{
+  transform:translateY(-4px);
+  border-color:var(--rose);
+  box-shadow:0 16px 32px -22px rgba(143,47,69,.5);
+}
+.cat-card .num{
+  font-size:13px;
+  font-weight:700;
+  color:var(--gold);
+  letter-spacing:1px;
+}
+.cat-card h3{
+  font-size:17.5px;
+  margin:8px 0 10px;
+  color:var(--ink);
+}
+.cat-card p{
+  font-size:14.5px;
+  color:var(--ink-soft);
+}
+/* ---------- 法则清单 ---------- */
+.law-section{background:linear-gradient(180deg,#fffafb,#fff4f6);}
+.law-cols{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:16px 32px;
+}
+.law-item{
+  display:flex;
+  gap:16px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:18px 20px;
+  transition:.2s;
+}
+.law-item:hover{
+  border-color:var(--rose);
+  box-shadow:0 12px 26px -20px rgba(143,47,69,.55);
+}
+.law-index{
+  font-size:15px;
+  font-weight:700;
+  color:#fff;
+  background:var(--rose);
+  width:34px;height:34px;
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+}
+.law-item h3{
+  font-size:16px;
+  margin-bottom:6px;
+  color:var(--rose-deep);
+}
+.law-item p{
+  font-size:14.5px;
+  color:var(--ink-soft);
+}
+/* ---------- 场景 ---------- */
+.scene-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+}
+.scene-card{
+  border-radius:var(--radius);
+  padding:24px 20px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-top:4px solid var(--rose);
+}
+.scene-card:nth-child(2){border-top-color:var(--gold);}
+.scene-card:nth-child(3){border-top-color:#7f9c7a;}
+.scene-card:nth-child(4){border-top-color:#6d83b5;}
+.scene-card h3{
+  font-size:16.5px;
+  margin-bottom:10px;
+}
+.scene-card p{
+  font-size:14.5px;
+  color:var(--ink-soft);
+}
+/* ---------- 误区 ---------- */
+.myth-section{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.myth-list{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+.myth{
+  background:var(--rose-soft);
+  border-radius:var(--radius);
+  padding:22px 20px;
+}
+.myth h3{
+  font-size:16px;
+  color:var(--rose-deep);
+  margin-bottom:8px;
+}
+.myth p{font-size:14.5px;color:var(--ink-soft);}
+/* ---------- FAQ ---------- */
+.faq{max-width:860px;}
+.faq-item{
+  border-bottom:1px solid var(--line);
+  padding:18px 0;
+}
+.faq-item summary{
+  cursor:pointer;
+  font-size:16.5px;
+  font-weight:600;
+  color:var(--ink);
+  list-style:none;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:14px;
+}
+.faq-item summary::-webkit-details-marker{display:none;}
+.faq-item summary::after{
+  content:"+";
+  font-size:20px;
+  color:var(--rose);
+  font-weight:400;
+  transition:.2s;
+}
+.faq-item[open] summary::after{
+  content:"–";
+}
+.faq-item p{
+  margin-top:12px;
+  font-size:15px;
+  color:var(--ink-soft);
+}
+/* ---------- 引用 ---------- */
+.quote-band{
+  background:linear-gradient(135deg,var(--rose-deep),var(--rose));
+  color:#fff;
+  padding:52px 0;
+}
+.quote-band blockquote{
+  max-width:780px;
+  margin:0 auto;
+  text-align:center;
+  font-size:19px;
+  line-height:1.9;
+  letter-spacing:.5px;
+}
+.quote-band cite{
+  display:block;
+  margin-top:18px;
+  font-size:14px;
+  font-style:normal;
+  opacity:.8;
+}
+/* ---------- footer ---------- */
+.site-footer{
+  background:#2c2226;
+  color:#d8ccd0;
+  padding:52px 0 26px;
+  font-size:14.5px;
+}
+.footer-grid{
+  display:grid;
+  grid-template-columns:1.4fr 1fr 1fr 1fr;
+  gap:32px;
+  margin-bottom:36px;
+}
+.footer-grid h4{
+  color:#fff;
+  font-size:15.5px;
+  margin-bottom:14px;
+}
+.footer-grid ul{list-style:none;}
+.footer-grid li{margin-bottom:9px;}
+.footer-grid a{color:#c3b4b9;transition:.2s;}
+.footer-grid a:hover{color:#fff;}
+.footer-about p{
+  color:#b3a4a9;
+  font-size:14px;
+  max-width:300px;
+}
+.footer-bottom{
+  border-top:1px solid #443a3e;
+  padding-top:20px;
+  text-align:center;
+  font-size:13.5px;
+  color:#9c8f94;
+}
+/* ---------- 响应式 ---------- */
+@media (max-width:980px){
+  .hero-grid{grid-template-columns:1fr;gap:34px;}
+  .cat-grid{grid-template-columns:repeat(2,1fr);}
+  .scene-grid{grid-template-columns:repeat(2,1fr);}
+  .myth-list{grid-template-columns:repeat(2,1fr);}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+}
+@media (max-width:720px){
+  .main-nav{display:none;}
+  .nav-toggle{display:block;}
+  .main-nav.open{
+    display:flex;
+    flex-direction:column;
+    position:absolute;
+    top:66px;left:0;right:0;
+    background:#fff;
+    border-bottom:1px solid var(--line);
+    padding:14px 20px 20px;
+    gap:14px;
+    box-shadow:0 18px 30px -22px rgba(0,0,0,.4);
+  }
+  .header-cta{display:none;}
+  .hero{padding:44px 0 40px;}
+  .hero h1{font-size:28px;}
+  section{padding:44px 0;}
+  .section-head h2{font-size:22px;}
+  .cat-grid,
+  .law-cols,
+  .scene-grid,
+  .myth-list{grid-template-columns:1fr;}
+  .footer-grid{grid-template-columns:1fr;gap:24px;}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="logo" href="#top">
+      <span class="logo-mark">爱</span>
+      爱的一百条法则
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#meaning">核心理念</a>
+      <a href="#laws">法则精选</a>
+      <a href="#scene">相处场景</a>
+      <a href="#myth">常见误区</a>
+      <a href="#faq">常见问答</a>
+    </nav>
+    <a class="header-cta" href="#laws">开始阅读</a>
+    <button class="nav-toggle" id="navToggle" aria-label="展开导航">☰</button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>爱的一百条法则
+          <span>关于理解、尊重与长期陪伴的相处智慧</span>
+        </h1>
+        <p class="lead">
+          “爱的一百条法则”并不是一份必须逐条照做的规定清单，而是一组围绕亲密关系整理的观察与提醒。
+          它关心的是：怎样在喜欢一个人的同时保持自我，怎样把情绪说清楚，怎样在漫长的相处中让关系保持温度。
+          无论你正处在心动、磨合还是长期陪伴的阶段，都可以从中找到适合自己的部分。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#laws">查看法则精选</a>
+          <a class="btn btn-ghost" href="#meaning">先了解核心理念</a>
+        </div>
+      </div>
+      <aside class="hero-card">
+        <h2>阅读前可以先想清楚的三件事</h2>
+        <ul class="mini-list">
+          <li><b>关系</b>法则是参考，不是标准答案，每段关系都有自己的节奏。</li>
+          <li><b>自我</b>好的爱情不会要求你不断压缩自己的边界和需求。</li>
+          <li><b>沟通</b>大多数矛盾不是不爱，而是没有把感受说明白。</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 核心理念 -->
+  <section id="meaning" class="cat-section">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">CORE IDEAS</span>
+        <h2>一百条法则背后，其实只有几个核心方向</h2>
+        <p>
+          条目可以很多，但真正支撑一段关系稳定的，往往是少数几个反复出现的主题。
+          理解这些方向，比记住具体条目更有意义。
+        </p>
+      </div>
+      <div class="cat-grid">
+        <article class="cat-card">
+          <span class="num">01 / 理解</span>
+          <h3>先理解，再表达</h3>
+          <p>在争论之前，先确认自己是否真的听懂了对方在说什么。很多冲突源于误读，而不是分歧本身。</p>
+        </article>
+        <article class="cat-card">
+          <span class="num">02 / 尊重</span>
+          <h3>把对方当作独立的人</h3>
+          <p>亲密不等于占有。尊重对方的节奏、朋友、事业和独处需求，关系才有呼吸的空间。</p>
+        </article>
+        <article class="cat-card">
+          <span class="num">03 / 沟通</span>
+          <h3>说感受，而不是下判断</h3>
+          <p>“我觉得难过”比“你总是这样”更容易被接住。表达方式，往往决定了对话能不能继续。</p>
+        </article>
+        <article class="cat-card">
+          <span class="num">04 / 边界</span>
+          <h3>亲密也需要分寸</h3>
+          <p>知道哪些事可以分享、哪些事需要商量、哪些事必须自己承担，是关系成熟的标志。</p>
+        </article>
+        <article class="cat-card">
+          <span class="num">05 / 成长</span>
+          <h3>一起变好，而不是互相消耗</h3>
+          <p>好的关系会让人更愿意面对生活，而不是把彼此拖进反复的内耗与怀疑之中。</p>
+        </article>
+        <article class="cat-card">
+          <span class="num">06 / 时间</span>
+          <h3>长期靠的是日常</h3>
+          <p>热烈会退潮，真正留下的是那些看起来很小、但持续发生的关心与回应。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 法则精选 -->
+  <section id="laws" class="law-section">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">SELECTED LAWS</span>
+        <h2>法则精选：从心动到长期相处的十二个提醒</h2>
+        <p>
+          以下条目从“爱的一百条法则”这一主题出发，按关系推进的常见阶段整理，
+          每条都尽量落到可以实践的具体动作上，而不是停留在口号。
+        </p>
+      </div>
+      <div class="law-cols">
+
+        <article class="law-item">
+          <div class="law-index">1</div>
+          <div>
+            <h3>喜欢要说出来，但不必急着定义</h3>
+            <p>表达好感是坦诚，急着给关系贴标签则可能带来压力。让感受和了解同步推进。</p>
+          </div>
+        </article>
+
+        <article class="law-item">
+          <div class="law-index">2</div>
+          <div>
+            <h3>先了解对方的生活节奏</h3>
+            <p>作息、工作强度、社交习惯都会影响相处方式。了解节奏，比强行同步更有效。</p>
+          </div>
+        </article>
+
+        <article class="law-item">
+          <div class="law-index">3</div>
+          <div>
+            <h3>不要用试探代替提问</h3>
+            <p>猜测和试探容易制造误会。有疑问时，直接而温和地问，往往更省力。</p>
+          </div>
+        </article>
+
+        <article class="law-item">
+          <div class="law-index">4</div>
+          <div>
+            <h3>把“你总是”换成“这一次”</h3>
+            <p>绝对化的表达会让人立刻进入防御状态，具体描述事实更容易被接受。</p>
+          </div>
+        </article>
+
+        <article class="law-item">
+          <div class="law-index">5</div>
+          <div>
+            <h3>吵架时也要留退路</h3>
+            <p>不翻旧账、不攻击人格、不在情绪最高点做决定，是让争吵不失控的关键。</p>
+          </div>
+        </article>
+
+        <article class="law-item">
+          <div class="law-index">6</div>
+          <div>
+            <h3>道歉要具体，不要敷衍</h3>
+            <p>说清楚自己哪里做得不妥、下次会怎么调整，比一句“对不起”更有分量。</p>
+          </div>
+        </article>
+
+        <article class="law-item">
+          <div class="law-index">7</div>
+          <div>
+            <h3>保留各自的独处时间</h3>
+            <p>再亲密的关系也需要个人空间。独处不是疏远，而是恢复能量的方式。</p>
+          </div>
+        </article>
+
+        <article class="law-item">
+          <div class="law-index">8</div>
+          <div>
+            <h3>不要用沉默惩罚对方</h3>
+            <p>冷处理会让对方在不确定中反复猜测。需要冷静时，可以先说明“我需要一点时间”。</p>
+          </div>
+        </article>
+
+        <article class="law-item">
+          <div class="law-index">9</div>
+          <div>
+            <h3>记得回应那些小事</h3>
+            <p>一句“到家了吗”、一次顺手的帮忙，长期累积起来，就是关系的安全感。</p>
+          </div>
+        </article>
+
+        <article class="law-item">
+          <div class="law-index">10</div>
+          <div>
+            <h3>分歧不等于不合适</h3>
+            <p>观念差异是常态。关键看双方是否愿意在差异中寻找可以共同接受的方案。</p>
+          </div>
+        </article>
+
+        <article class="law-item">
+          <div class="law-index">11</div>
+          <div>
+            <h3>不要拿关系去交换自我</h3>
+            <p>为了维持关系而长期压抑需求，最终会以更大的失望或疲惫回到关系里。</p>
+          </div>
+        </article>
+
+        <article class="law-item">
+          <div class="law-index">12</div>
+          <div>
+            <h3>承认关系需要共同维护</h3>
+            <p>长期关系不是靠某一方持续付出，而是双方都愿意为它调整和投入。</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 相处场景 -->
+  <section id="scene">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">SCENES</span>
+        <h2>把法则放进具体场景里</h2>
+        <p>
+          抽象的原则只有在具体情境中才有意义。以下四个场景，是亲密关系中最常被讨论的部分。
+        </p>
+      </div>
+      <div class="scene-grid">
+        <article class="scene-card">
+          <h3>刚开始靠近</h3>
+          <p>保持真诚，也保持观察。不必为了迎合对方而修改自己的喜好和底线，让了解自然发生。</p>
+        </article>
+        <article class="scene-card">
+          <h3>进入磨合期</h3>
+          <p>差异开始显现，容易因为小事反复争执。此时更需要把问题具体化，而不是上升到“爱不爱”。</p>
+        </article>
+        <article class="scene-card">
+          <h3>长期相处</h3>
+          <p>新鲜感下降是正常现象。可以一起建立新的共同体验，让关系持续有内容可以聊、可以期待。</p>
+        </article>
+        <article class="scene-card">
+          <h3>出现裂痕</h3>
+          <p>先判断是沟通问题还是原则问题。前者可以修复，后者需要认真评估是否还能继续同行。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 常见误区 -->
+  <section id="myth" class="myth-section">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">MISUNDERSTANDINGS</span>
+        <h2>关于“爱的法则”，常见的三种误解</h2>
+        <p>把法则当成教条，反而容易让关系变得僵硬。以下误解值得留意。</p>
+      </div>
+      <div class="myth-list">
+        <article class="myth">
+          <h3>误解一：法则越多越安全</h3>
+          <p>条目本身不能保证关系稳定。真正起作用的是双方是否愿意理解并调整自己。</p>
+        </article>
+        <article class="myth">
+          <h3>误解二：照做就能不吵架</h3>
+          <p>冲突是关系的一部分。法则的意义不是消灭矛盾，而是让矛盾不至于伤害彼此。</p>
+        </article>
+        <article class="myth">
+          <h3>误解三：只有一方需要改变</h3>
+          <p>如果始终只有一个人在努力，那么再完整的法则也无法支撑一段关系走远。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 引用 -->
+  <section class="quote-band">
+    <div class="wrap">
+      <blockquote>
+        爱不是把两个人变成一个人，而是两个人都还能做自己，却愿意为对方多走一步。
+        <cite>—— 关于“爱的一百条法则”的一种理解</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">FAQ</span>
+        <h2>常见问答</h2>
+        <p>如果你刚开始接触“爱的一百条法则”，下面这些问题可能正是你想问的。</p>
+      </div>
+      <div class="faq">
+        <details class="faq-item" open>
+          <summary>“爱的一百条法则”真的有一百条吗？</summary>
+          <p>“一百条”更多是一种表达方式，用来形容关于爱的经验与提醒有很多。不同的人整理出来的条目和侧重各不相同，重要的是理解其中反复出现的核心方向，而不是纠结数字。</p>
+        </details>
+        <details class="faq-item">
+          <summary>这些法则适合所有人吗？</summary>
+          <p>不完全适合。每个人的性格、成长背景和关系阶段不同，同一条建议在不同人身上效果可能相反。建议把它当作参考框架，结合自己的实际情况判断。</p>
+        </details>
+        <details class="faq-item">
+          <summary>如果对方完全不愿意沟通怎么办？</summary>
+          <p>沟通需要双方参与。你可以先表达自己的感受和期待，并给对方一定时间。如果长期得不到回应，也需要认真考虑这段关系是否还能满足你的基本需要。</p>
+        </details>
+        <details class="faq-item">
+          <summary>法则能用来判断一段关系要不要继续吗？</summary>
+          <p>它可以帮助你梳理自己的感受和需求，但不应作为唯一标准。涉及安全、尊重和原则性的问题，建议优先考虑自身处境，必要时寻求可信赖的亲友或专业人士的意见。</p>
+        </details>
+        <details class="faq-item">
+          <summary>怎样把这些法则用到日常相处中？</summary>
+          <p>可以从一两条最容易做到的开始，比如“把感受说清楚”“不用沉默惩罚对方”。持续练习比一次记住全部更实际，也更容易看到关系中的变化。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <h4>爱的一百条法则</h4>
+        <p>一个围绕亲密关系、情感沟通与自我成长整理的内容站点，希望为正在认真对待感情的人提供一些可参考的思路。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#meaning">核心理念</a></li>
+          <li><a href="#laws">法则精选</a></li>
+          <li><a href="#scene">相处场景</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>深入阅读</h4>
+        <ul>
+          <li><a href="#myth">常见误区</a></li>
+          <li><a href="#faq">常见问答</a></li>
+          <li><a href="#top">回到顶部</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于本站</h4>
+        <ul>
+          <li><a href="#meaning">内容说明</a></li>
+          <li><a href="#laws">阅读建议</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2024 爱的一百条法则 · 本站内容为情感关系主题的经验整理与参考，不构成专业心理或法律建议。
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var toggle = document.getElementById('navToggle');
+  var nav = document.getElementById('mainNav');
+  if(toggle && nav){
+    toggle.addEventListener('click', function(){
+      nav.classList.toggle('open');
+    });
+    nav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A'){
+        nav.classList.remove('open');
+      }
+    });
+  }
+})();
+</script>
+
+</body>
+  </html>
