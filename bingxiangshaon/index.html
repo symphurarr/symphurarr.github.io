@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>冰箱少女-角色设定与作品资料介绍专题</title>
+<meta name="description" content="冰箱少女专题页面，整理角色设定、作品背景、人物关系、登场剧情与常见问题，帮助读者快速了解冰箱少女的相关资料与阅读观看方向。">
+<meta name="keywords" content="冰箱少女,冰箱少女角色,冰箱少女设定,冰箱少女人物介绍,冰箱少女作品资料">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --ice-blue: #dff1fb;
+  --deep-blue: #1c3f5e;
+  --mid-blue: #3f7fa6;
+  --soft-cyan: #7fc7e8;
+  --frost-white: #f7fbfe;
+  --warm-accent: #f2a65a;
+  --text-main: #22333f;
+  --text-sub: #5c7484;
+  --line: #d3e6f0;
+  --radius: 14px;
+  --shadow: 0 10px 30px rgba(28, 63, 94, 0.08);
+}
+body {
+  font-family: "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", "Helvetica Neue", Arial, sans-serif;
+  background: linear-gradient(180deg, #eaf6fd 0%, #f7fbfe 320px, #f7fbfe 100%);
+  color: var(--text-main);
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+.container {
+  width: min(1180px, 92%);
+  margin: 0 auto;
+}
+/* 顶部导航 */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(247, 251, 254, 0.9);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 14px 0;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: 0.5px;
+  color: var(--deep-blue);
+}
+.brand-mark {
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  background: linear-gradient(150deg, var(--soft-cyan), var(--mid-blue));
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-size: 1.05rem;
+  box-shadow: 0 6px 16px rgba(63, 127, 166, 0.35);
+}
+.main-nav {
+  display: flex;
+  gap: 26px;
+  font-size: 0.95rem;
+  color: var(--text-sub);
+}
+.main-nav a {
+  padding: 6px 0;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+.main-nav a:hover {
+  color: var(--mid-blue);
+  border-bottom-color: var(--soft-cyan);
+}
+.nav-cta {
+  background: var(--deep-blue);
+  color: #fff;
+  padding: 9px 18px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  transition: background 0.2s, transform 0.2s;
+}
+.nav-cta:hover {
+  background: var(--mid-blue);
+  transform: translateY(-1px);
+}
+/* 首屏 */
+.hero {
+  padding: 64px 0 56px;
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 48px;
+  align-items: center;
+}
+.hero-badge {
+  display: inline-block;
+  background: #fff;
+  border: 1px solid var(--line);
+  color: var(--mid-blue);
+  font-size: 0.82rem;
+  padding: 6px 14px;
+  border-radius: 999px;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow);
+}
+.hero h1 {
+  font-size: clamp(1.9rem, 4vw, 2.9rem);
+  line-height: 1.3;
+  color: var(--deep-blue);
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+.hero h1 span {
+  color: var(--mid-blue);
+}
+.hero-lead {
+  font-size: 1.02rem;
+  color: var(--text-sub);
+  margin-bottom: 28px;
+  max-width: 560px;
+}
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+}
+.btn-primary {
+  background: linear-gradient(135deg, var(--mid-blue), var(--deep-blue));
+  color: #fff;
+  box-shadow: 0 12px 24px rgba(28, 63, 94, 0.22);
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 30px rgba(28, 63, 94, 0.28);
+}
+.btn-ghost {
+  background: #fff;
+  color: var(--deep-blue);
+  border: 1px solid var(--line);
+}
+.btn-ghost:hover {
+  border-color: var(--soft-cyan);
+  transform: translateY(-2px);
+}
+.hero-visual {
+  position: relative;
+  background: linear-gradient(160deg, #ffffff 0%, #e7f4fb 100%);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 28px;
+  box-shadow: var(--shadow);
+}
+.fridge-card {
+  background: #fff;
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  padding: 20px;
+}
+.fridge-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.fridge-title {
+  font-weight: 700;
+  color: var(--deep-blue);
+  font-size: 0.98rem;
+}
+.fridge-light {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--soft-cyan);
+  box-shadow: 0 0 0 5px rgba(127, 199, 232, 0.25);
+}
+.fridge-rows {
+  display: grid;
+  gap: 10px;
+}
+.fridge-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--frost-white);
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-size: 0.88rem;
+  color: var(--text-sub);
+}
+.fridge-row b {
+  color: var(--deep-blue);
+  font-weight: 600;
+}
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--warm-accent);
+  flex: none;
+}
+.dot.blue {
+  background: var(--soft-cyan);
+}
+.dot.deep {
+  background: var(--mid-blue);
+}
+/* 通用区块 */
+.section {
+  padding: 56px 0;
+}
+.section-head {
+  max-width: 720px;
+  margin-bottom: 34px;
+}
+.section-tag {
+  display: inline-block;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  color: var(--mid-blue);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.section-head h2 {
+  font-size: clamp(1.4rem, 2.6vw, 1.9rem);
+  color: var(--deep-blue);
+  margin-bottom: 12px;
+}
+.section-head p {
+  color: var(--text-sub);
+  font-size: 0.96rem;
+}
+/* 角色档案 */
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+.profile-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 26px 24px;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.profile-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 36px rgba(28, 63, 94, 0.12);
+}
+.profile-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  background: var(--ice-blue);
+  color: var(--mid-blue);
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.profile-card h3 {
+  font-size: 1.05rem;
+  color: var(--deep-blue);
+  margin-bottom: 10px;
+}
+.profile-card p {
+  font-size: 0.92rem;
+  color: var(--text-sub);
+}
+/* 设定要点 */
+.setting-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 40px;
+  align-items: start;
+}
+.setting-list {
+  list-style: none;
+  display: grid;
+  gap: 16px;
+}
+.setting-list li {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--soft-cyan);
+  border-radius: 12px;
+  padding: 16px 18px;
+  font-size: 0.93rem;
+  color: var(--text-sub);
+}
+.setting-list li strong {
+  display: block;
+  color: var(--deep-blue);
+  font-size: 0.98rem;
+  margin-bottom: 4px;
+}
+.setting-note {
+  background: linear-gradient(160deg, #ffffff, #eef7fc);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 26px;
+  box-shadow: var(--shadow);
+}
+.setting-note h3 {
+  color: var(--deep-blue);
+  font-size: 1.12rem;
+  margin-bottom: 14px;
+}
+.setting-note p {
+  font-size: 0.94rem;
+  color: var(--text-sub);
+  margin-bottom: 12px;
+}
+.setting-note p:last-child {
+  margin-bottom: 0;
+}
+/* 剧情脉络 */
+.timeline {
+  display: grid;
+  gap: 18px;
+}
+.timeline-item {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 22px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 22px 24px;
+  box-shadow: var(--shadow);
+}
+.timeline-label {
+  font-weight: 700;
+  color: var(--mid-blue);
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+.timeline-body h3 {
+  font-size: 1.02rem;
+  color: var(--deep-blue);
+  margin-bottom: 8px;
+}
+.timeline-body p {
+  font-size: 0.92rem;
+  color: var(--text-sub);
+}
+/* 主题解读 */
+.theme-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+.theme-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: var(--shadow);
+}
+.theme-card h3 {
+  font-size: 1.02rem;
+  color: var(--deep-blue);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.theme-card h3::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  background: var(--soft-cyan);
+}
+.theme-card p {
+  font-size: 0.92rem;
+  color: var(--text-sub);
+}
+/* 相关作品 */
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.work-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s;
+}
+.work-card:hover {
+  transform: translateY(-4px);
+}
+.work-cover {
+  height: 120px;
+  background: linear-gradient(140deg, var(--ice-blue), #cfe8f6);
+  display: grid;
+  place-items: center;
+  color: var(--mid-blue);
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+}
+.work-body {
+  padding: 18px 20px 22px;
+}
+.work-body h3 {
+  font-size: 1rem;
+  color: var(--deep-blue);
+  margin-bottom: 8px;
+}
+.work-body p {
+  font-size: 0.88rem;
+  color: var(--text-sub);
+}
+/* FAQ */
+.faq-list {
+  display: grid;
+  gap: 14px;
+  max-width: 900px;
+}
+.faq-item {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 20px 24px;
+  box-shadow: var(--shadow);
+}
+.faq-item h3 {
+  font-size: 0.99rem;
+  color: var(--deep-blue);
+  margin-bottom: 8px;
+}
+.faq-item p {
+  font-size: 0.9rem;
+  color: var(--text-sub);
+}
+/* 侧栏提示 */
+.tip-band {
+  background: linear-gradient(135deg, var(--deep-blue), var(--mid-blue));
+  color: #fff;
+  border-radius: 20px;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1.4fr 0.6fr;
+  gap: 30px;
+  align-items: center;
+  box-shadow: 0 20px 40px rgba(28, 63, 94, 0.25);
+}
+.tip-band h2 {
+  font-size: clamp(1.3rem, 2.4vw, 1.7rem);
+  margin-bottom: 12px;
+}
+.tip-band p {
+  font-size: 0.94rem;
+  opacity: 0.9;
+}
+.tip-band .btn {
+  background: #fff;
+  color: var(--deep-blue);
+  justify-self: end;
+}
+/* 页脚 */
+.site-footer {
+  background: #10293f;
+  color: #b9d2e2;
+  padding: 48px 0 26px;
+  margin-top: 40px;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 36px;
+  margin-bottom: 34px;
+}
+.footer-brand {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+.footer-col p {
+  font-size: 0.88rem;
+  line-height: 1.8;
+}
+.footer-col h4 {
+  color: #fff;
+  font-size: 0.95rem;
+  margin-bottom: 14px;
+}
+.footer-col ul {
+  list-style: none;
+  display: grid;
+  gap: 9px;
+  font-size: 0.88rem;
+}
+.footer-col ul a:hover {
+  color: #fff;
+}
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding-top: 20px;
+  font-size: 0.82rem;
+  text-align: center;
+  opacity: 0.75;
+}
+/* 响应式 */
+@media (max-width: 980px) {
+  .hero-grid,
+  .setting-layout,
+  .tip-band {
+    grid-template-columns: 1fr;
+  }
+  .profile-grid,
+  .works-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tip-band .btn {
+    justify-self: start;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 720px) {
+  .main-nav {
+    display: none;
+  }
+  .hero {
+    padding: 40px 0 32px;
+  }
+  .profile-grid,
+  .works-grid,
+  .theme-grid {
+    grid-template-columns: 1fr;
+  }
+  .timeline-item {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .tip-band {
+    padding: 28px;
+  }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#">
+      <span class="brand-mark">冰</span>
+      冰箱少女 · 资料站
+    </a>
+    <nav class="main-nav">
+      <a href="#profile">角色档案</a>
+      <a href="#setting">设定要点</a>
+      <a href="#story">剧情脉络</a>
+      <a href="#theme">主题解读</a>
+      <a href="#works">相关作品</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+    <a class="nav-cta" href="#faq">快速了解</a>
+  </div>
+</header>
+
+<main>
+  <!-- 首屏 -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <span class="hero-badge">角色设定 · 作品资料 · 阅读指引</span>
+        <h1>冰箱少女：<span>角色设定与作品资料</span>专题整理</h1>
+        <p class="hero-lead">
+          如果你正在搜索“冰箱少女”，多半是想弄清这个称呼指的是哪部作品、哪一类角色，或者它到底是一个角色名、作品名还是某种网络梗。本页从角色设定、作品背景、人物关系和常见疑问几个方向出发，把与冰箱少女相关的信息梳理清楚，方便你按需查阅。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#profile">查看角色档案</a>
+          <a class="btn btn-ghost" href="#faq">阅读常见问题</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="fridge-card">
+          <div class="fridge-top">
+            <span class="fridge-title">资料速览卡</span>
+            <span class="fridge-light"></span>
+          </div>
+          <div class="fridge-rows">
+            <div class="fridge-row"><span class="dot blue"></span><b>关键词性质</b>：角色 / 作品相关称呼</div>
+            <div class="fridge-row"><span class="dot deep"></span><b>常见关注点</b>：设定、剧情、人物关系</div>
+            <div class="fridge-row"><span class="dot"></span><b>适合人群</b>：动漫读者、角色考据爱好者</div>
+            <div class="fridge-row"><span class="dot blue"></span><b>查阅方式</b>：按栏目分块阅读</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 角色档案 -->
+  <section class="section" id="profile">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">PROFILE</span>
+        <h2>冰箱少女角色档案</h2>
+        <p>“冰箱少女”在不同语境下可能指向不同的角色形象。以下从常见的角色构成要素出发，拆解这一称呼通常包含的几个层面，帮助你判断自己关注的是哪一类设定。</p>
+      </div>
+      <div class="profile-grid">
+        <article class="profile-card">
+          <div class="profile-icon">身</div>
+          <h3>身份与称呼</h3>
+          <p>“冰箱少女”通常是一种带有比喻色彩的称呼，用来形容与冰箱、冷藏、低温意象产生关联的少女角色形象。它可能是角色本身的昵称、外号，也可能是读者对某类设定的概括叫法，具体指向需要结合作品语境判断。</p>
+        </article>
+        <article class="profile-card">
+          <div class="profile-icon">外</div>
+          <h3>外形与气质</h3>
+          <p>这类形象往往强调清冷、安静或略带距离感的气质，配色上偏向蓝、白、冰色系。外形设计常与“冷”的视觉符号呼应，比如浅色发系、简洁服饰、冷色调光影，形成与角色性格相匹配的整体印象。</p>
+        </article>
+        <article class="profile-card">
+          <div class="profile-icon">性</div>
+          <h3>性格与关系</h3>
+          <p>性格上常见“外冷内热”的处理方式：表面话少、反应平淡，随着剧情推进逐渐展现细腻或温柔的一面。人物关系通常围绕一两个核心角色展开，通过日常互动慢慢揭开她不为人知的想法与过去。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 设定要点 -->
+  <section class="section" id="setting">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">SETTING</span>
+        <h2>冰箱少女的设定要点</h2>
+        <p>理解一个角色，先看设定。下面把与“冰箱少女”相关的常见设定维度整理成条目，便于对照阅读。</p>
+      </div>
+      <div class="setting-layout">
+        <ul class="setting-list">
+          <li>
+            <strong>意象来源</strong>
+            冰箱象征低温、封闭与保存，常被用来比喻情绪内敛、把心事藏起来的角色状态。
+          </li>
+          <li>
+            <strong>视觉符号</strong>
+            冷色系配色、简洁线条、留白较多的画面，是这类形象常见的视觉表达方式。
+          </li>
+          <li>
+            <strong>叙事功能</strong>
+            在故事中往往承担“被打开”的角色，通过与主角的相处推动情感线的发展。
+          </li>
+          <li>
+            <strong>反差设计</strong>
+            外在冷淡与内在温热之间的反差，是这类角色最常被读者讨论的部分。
+          </li>
+        </ul>
+        <div class="setting-note">
+          <h3>阅读设定时要注意什么</h3>
+          <p>不同作品对“冰箱少女”的使用方式并不统一。有的把它当作正式角色名，有的只是读者之间的俗称，还有的可能出现在同人创作或二次解读中。</p>
+          <p>因此在查阅资料时，建议先确认作品名称、登场章节或创作者来源，再对照具体设定，避免把不同作品中的形象混为一谈。</p>
+          <p>如果你看到的内容与本文描述存在差异，通常是因为所指作品不同，而不是设定本身存在矛盾。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 剧情脉络 -->
+  <section class="section" id="story">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">STORY</span>
+        <h2>可能的剧情脉络</h2>
+        <p>以“低温角色逐渐被理解”这一常见叙事结构为例，梳理这类故事通常经历的阶段，帮助你快速把握剧情走向。</p>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-label">初见</div>
+          <div class="timeline-body">
+            <h3>疏离与误解</h3>
+            <p>角色初次登场时往往给人冷淡、难以接近的印象，周围人对她存在误解，互动停留在表面。这一阶段主要用来建立悬念，让读者产生“她为什么这样”的好奇。</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-label">转折</div>
+          <div class="timeline-body">
+            <h3>接触与松动</h3>
+            <p>通过日常事件或共同经历，主角与她产生更多接触，逐渐发现她行为背后的原因。原本的疏离感开始松动，人物关系进入新的阶段。</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-label">展开</div>
+          <div class="timeline-body">
+            <h3>过去的揭示</h3>
+            <p>角色的经历、心结或隐藏动机被逐步揭开，读者对她的理解从“标签”转向“具体的人”。这一部分通常是情感浓度最高的段落。</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-label">收束</div>
+          <div class="timeline-body">
+            <h3>改变与和解</h3>
+            <p>角色在关系中获得某种改变，或与自己的过去达成和解。结局未必是大团圆，但通常会让人物状态较开场有明显推进。</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 主题解读 -->
+  <section class="section" id="theme">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">THEME</span>
+        <h2>主题与解读角度</h2>
+        <p>“冰箱”这个意象本身带有很强的隐喻空间，从不同角度切入，可以看到不同的表达重点。</p>
+      </div>
+      <div class="theme-grid">
+        <article class="theme-card">
+          <h3>关于封闭与打开</h3>
+          <p>冰箱门关着时是封闭的，打开后才有光。这种结构常被用来比喻一个人从自我封闭到愿意被理解的过程，是这类角色最核心的叙事张力所在。</p>
+        </article>
+        <article class="theme-card">
+          <h3>关于保存与变质</h3>
+          <p>冷藏可以延缓变化，但无法真正停止时间。这一层含义常被用来讨论记忆、情感与成长之间的关系，带有轻微的感伤色彩。</p>
+        </article>
+        <article class="theme-card">
+          <h3>关于温度与距离</h3>
+          <p>低温既意味着距离，也意味着稳定。角色对“冷”的态度，往往折射出她对人际关系既渴望又谨慎的矛盾心理。</p>
+        </article>
+        <article class="theme-card">
+          <h3>关于日常与奇迹</h3>
+          <p>多数相关故事并不依赖宏大设定，而是通过日常细节累积情感。冰箱作为家中最常见的物件，恰好承载了这种平实而贴近生活的表达。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 相关作品 -->
+  <section class="section" id="works">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">WORKS</span>
+        <h2>可能相关的作品方向</h2>
+        <p>“冰箱少女”并非单一作品的固定名称，以下按常见类型列出可能相关的作品方向，供检索时参考。具体作品请以实际内容为准。</p>
+      </div>
+      <div class="works-grid">
+        <article class="work-card">
+          <div class="work-cover">日常系</div>
+          <div class="work-body">
+            <h3>日常温情向</h3>
+            <p>以生活片段为主，节奏舒缓，重点刻画角色之间的相处细节，适合喜欢慢节奏叙事的读者。</p>
+          </div>
+        </article>
+        <article class="work-card">
+          <div class="work-cover">幻想系</div>
+          <div class="work-body">
+            <h3>轻幻想设定向</h3>
+            <p>围绕特殊的角色设定展开，可能涉及非日常元素，用设定本身来承载情感与主题表达。</p>
+          </div>
+        </article>
+        <article class="work-card">
+          <div class="work-cover">短篇向</div>
+          <div class="work-body">
+            <h3>短篇与同人创作</h3>
+            <p>篇幅较短，聚焦单一情境或情绪，常见于个人创作与二次解读，风格差异较大。</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">FAQ</span>
+        <h2>关于冰箱少女的常见问题</h2>
+        <p>整理搜索者最常提出的几个问题，帮助你在最短时间内定位自己需要的信息。</p>
+      </div>
+      <div class="faq-list">
+        <article class="faq-item">
+          <h3>“冰箱少女”是一部作品的名字吗？</h3>
+          <p>它更常作为一种角色称呼或描述性说法出现，并不一定对应某部固定名称的作品。具体指向需要结合作品语境、登场章节或创作者来源来判断。</p>
+        </article>
+        <article class="faq-item">
+          <h3>为什么用“冰箱”来形容一个角色？</h3>
+          <p>主要取“低温、封闭、保存”这几层意象，用来比喻角色外冷内热、把情绪藏起来的性格特征，同时也带有一种日常而亲切的语感。</p>
+        </article>
+        <article class="faq-item">
+          <h3>想深入了解这类角色，应该从哪里入手？</h3>
+          <p>建议先确认具体作品，再从角色登场章节开始阅读或观看，配合人物关系图理解互动逻辑，最后再回看设定细节，会更容易把握整体脉络。</p>
+        </article>
+        <article class="faq-item">
+          <h3>不同作品里的“冰箱少女”设定会一样吗？</h3>
+          <p>不会完全一样。不同创作者对同一意象的使用方式各有侧重，有的强调性格反差，有的侧重主题隐喻，阅读时以具体作品为准即可。</p>
+        </article>
+        <article class="faq-item">
+          <h3>本页内容可以作为权威资料引用吗？</h3>
+          <p>本页为面向普通读者的整理性介绍，旨在帮助理解相关概念与检索方向。涉及具体作品细节时，建议以官方发布或原作内容为准。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 提示条 -->
+  <section class="section">
+    <div class="container">
+      <div class="tip-band">
+        <div>
+          <h2>先确认作品，再深入设定</h2>
+          <p>“冰箱少女”是一个开放度较高的称呼，找到你真正关注的那部作品，后续的角色分析与剧情讨论才有稳定的落脚点。</p>
+        </div>
+        <a class="btn" href="#profile">回到角色档案</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-brand">冰箱少女 · 资料站</div>
+        <p>围绕“冰箱少女”这一关键词，整理角色设定、作品背景、剧情脉络与常见问题，为读者提供清晰的查阅入口。</p>
+      </div>
+      <div class="footer-col">
+        <h4>页面导航</h4>
+        <ul>
+          <li><a href="#profile">角色档案</a></li>
+          <li><a href="#setting">设定要点</a></li>
+          <li><a href="#story">剧情脉络</a></li>
+          <li><a href="#theme">主题解读</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>阅读提示</h4>
+        <ul>
+          <li>以具体作品内容为准</li>
+          <li>区分正式设定与读者俗称</li>
+          <li>理性看待二次解读内容</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      本站为资料整理与阅读指引页面，内容仅供参考，具体作品信息请以官方发布为准。
+    </div>
+  </div>
+</footer>
+
+</body>
+  </html>
